@@ -67,7 +67,7 @@ local lang = redis:get(hash)
 			{text = '> قابلیت های بیشتر ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '> درباره ما ', callback_data = '/beyond:'..GP_id}
+			{text = '> درباره ما ', callback_data = '/Nice20Team:'..GP_id}
 		},
 		{
 			{text= '> بازگشت' ,callback_data = '/lang:'..GP_id}

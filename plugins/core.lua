@@ -49,7 +49,7 @@ local lang = redis:get(hash)
 			{text = '> More ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '> About Us ', callback_data = '/beyond:'..GP_id}
+			{text = '> About Us ', callback_data = '/Nice20Team:'..GP_id}
 		},
 		{
 			{text= '> Back' ,callback_data = '/lang:'..GP_id}
@@ -2650,17 +2650,17 @@ local keyboard = {}
 end
 end
          -- ####################### About Us ####################### --
-if matches[1] == '/beyond' then
+if matches[1] == '/Nice20Team' then
 	local text = _config.info_text
     if not lang then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SoLiD", callback_data="/solid:"..matches[2]}, 
-			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
+			{text = "> SHAHIN", callback_data="/SHAHIN:"..matches[2]}, 
+			{text = "> MM", callback_data="/MM:"..matches[2]}
 		},
 		{
-			{text = '> Our GitHub ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> Our chanel ', url = 'https://t.me/Nice20Team'}
 		},
 		{
 			{text= '> Back' ,callback_data = '/option:'..matches[2]}
@@ -2670,11 +2670,11 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> سعید", callback_data="/solid:"..matches[2]}, 
-			{text = "> طوفان", callback_data="/toofan:"..matches[2]}
+			{text = "> شاهین", callback_data="/solid:"..matches[2]}, 
+			{text = "> ام ام", callback_data="/toofan:"..matches[2]}
 		},
 		{
-			{text = '> گیت هاب تیم ', url = 'https://www.github.com/BeyondTeam'}
+			{text = '> کانال تیم', url = 'https://t.me/Nice20Team'}
 		},
 		{
 			{text= '> بازگشت' ,callback_data = '/option:'..matches[2]}
@@ -2684,18 +2684,18 @@ if matches[1] == '/beyond' then
     edit_inline(msg.message_id, text, keyboard)
 end
 
-if matches[1] == '/solid' then
-local text = [[*》SoLiD Information《*
-_》Age :_ *26*
-_》Name :_ *Saeid Rostami*
-_》City :_ *Shahriar - Tehran*
+if matches[1] == '/SHAHIN' then
+local text = [[*》SHAHIN Information《*
+_》Age :_ *27*
+_》Name :_ *SHAHIN NICE*
+_》City :_ *TABRIZ - MARAGHEH*
 *-------------------------*
-*》GitHub :《*
-》[SoLiD021](Github.Com/SoLiD021)
+*》 :《*
+》[)
 *-------------------------*
 *》Bridges :《*
-_》Pv : _[@SoLiD](Telegram.Me/SoLiD)
-_》PvResan : _[@SoLiD Pv](Telegram.Me/SoLiD021Pv_Bot)
+_》Pv : _[@Shahin20Nice](Telegram.Me/Shahin20Nice)
+_》PvResan : _[@Shahin20Nice](Telegram.Me/Shahin20Nice)
 *-------------------------*
 *》Expertise :《*
 _》_*Lua*, *Cli* `and` *Api* _Bots_
@@ -2704,31 +2704,31 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/beyond:"..matches[2]}
+				{text = "> Back", callback_data="/Nice20Team:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "> بازگشت", callback_data="/Nice20Team:"..matches[2]}
 			}
 		}
   end
     edit_inline(msg.message_id, text, keyboard)
 end
-if matches[1] == '/toofan' then
-local text = [[*》ToOfan Information《*
+if matches[1] == '/MM' then
+local text = [[*》MM Information《*
 _》Age :_ *35*
-_》Name :_ *Ali AzizAbadi*
-_》City :_ *Bam - Kerman*
+_》Name :_ *M M*
+_》City :_ *TABRIZ - M2B*
 *-------------------------*
-*》GitHub :《*
-》[To0fan](GitHub.Com/To0fan)
+*》 :《*
+》[)
 *-------------------------*
 *》Bridges :《*
-_》Pv :_ [@ToOfan](Telegram.Me/ToOfan)
-_》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
+_》Pv :_ [@MM20Nice](Telegram.Me/MM20Nice)
+_》PvResan :_ [@MM20Nice](Telegram.Me/MM20Nice)
 *-------------------------*
 *》Expertise :《*
 *》C#, Lua, VB.Net, JAVA*
@@ -2738,14 +2738,14 @@ _》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/beyond:"..matches[2]}
+				{text = "> Back", callback_data="/Nice20Team:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "> بازگشت", callback_data="/Nice20Team:"..matches[2]}
 			}
 		}
   end
@@ -2821,7 +2821,7 @@ return {
 		"^###cb:(/mutekeyboard):(.*)$",
 		"^###cb:(/mutecontact):(.*)$",
 		"^###cb:(/muteforward):(.*)$",
-		"^###cb:(/toofan):(.*)$",
+		"^###cb:(/MM):(.*)$",
 		"^###cb:(/setflood):(.*)$",
 		"^###cb:(/floodup):(.*)$",
 		"^###cb:(/flooddown):(.*)$",
@@ -2836,14 +2836,14 @@ return {
 		"^###cb:(/modlist):(.*)$",
 		"^###cb:(/cleanmods):(.*)$",
 		"^###cb:(/bans):(.*)$",
-		"^###cb:(/beyond):(.*)$",
+		"^###cb:(/Nice20Team):(.*)$",
 		"^###cb:(/cleanbans):(.*)$",
 		"^###cb:(/filterlist):(.*)$",
 		"^###cb:(/cleanfilterlist):(.*)$",
 		"^###cb:(/whitelist):(.*)$",
 		"^###cb:(/cleanwhitelist):(.*)$",
 		"^###cb:(/silentlist):(.*)$",
-		"^###cb:(/solid):(.*)$",
+		"^###cb:(/SHAHIN):(.*)$",
 		"^###cb:(/cleansilentlist):(.*)$",
 		"^###cb:(/link):(.*)$",
 		"^###cb:(/rules):(.*)$",

@@ -683,8 +683,8 @@ local lang = redis:get(hash)
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> English", callback_data="/english:"..matches[2]},
-			{text = '> فارسی ', callback_data = '/persian:'..matches[2]}
+			{text = "> 🇬🇧English", callback_data="/english:"..matches[2]},
+			{text = '> 🇮🇷فارسی ', callback_data = '/persian:'..matches[2]}
 		},
 		{
 			{text= '> Exit' ,callback_data = '/exit:'..matches[2]}

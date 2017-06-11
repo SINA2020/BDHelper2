@@ -2,7 +2,7 @@ package.path = package.path..';.luarocks/share/lua/5.2/?.lua;.luarocks/share/lua
 package.cpath = package.cpath..';.luarocks/lib/lua/5.2/?.so'
 bot_token = "334612749:AAH5YRUK9cSnPii7FAsZmNrA3wTOUr8O-ys" --Put You Token Here
 send_api = "https://api.telegram.org/bot"..bot_token
-sudo_id = 157059515
+sudo_id = 372530129
 require('./bot/methods')
 require('./bot/utils')
 require('./libs/JSON')
@@ -162,28 +162,28 @@ function create_config( )
     "core",
     "plugins"
     },
-    sudo_users = {157059515},--Sudo users
+    sudo_users = {372530129,376398390},--Sudo users
     admins = {},
     disabled_channels = {},
     moderation = {data = ''..BeyondTeam..'/data/moderation.json'},
-    info_text = [[*》Beyond Helper Bot V1.5*
-`》An helper bot of` *BDReborn* `based on` *BDMessenger*
+    info_text = [[*》Nice Helper Bot V1.5*
+`》An helper bot of` *Nice* `based on` *BDMessenger*
 
-》[Beyond Helper](https://github.com/BeyondTeam/BDHelper)
+》
 
 *》Admins :*
-*》Founder & Developer :* [SoLiD](Telegram.Me/SoLiD)
-_》Developer :_ [ToOfan](Telegram.Me/ToOfan)
-_》Developer & Sponser :_ [MAKAN](Telegram.Me/MAKAN)
+*》Founder & Developer :* [SHAHIN20NICE](Telegram.Me/SHAHIN20NICE)
+_》Developer :_ [Nice20Admin](Telegram.Me/Nice20Admin)
+_》Developer & Sponser :_ [MM20Nice](Telegram.Me/MM20Nice)
 
 *》Special thanks to :*
-》[Amir Bagheri](Telegram.Me/CodeLua)
+》[Amir Bagheri]()
 
 *》Our channel :*
-》[BeyondTeam](Telegram.Me/BeyondTeam)
+》[Nice20Team](Telegram.Me/Nice20Team)
 
 *》Our Site :*
-》[BeyondTeam](BeyondTeam.ir)
+》[)
 ]],
   }
   serialize_to_file(config, './data/config.lua')

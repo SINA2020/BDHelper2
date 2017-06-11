@@ -2329,7 +2329,7 @@ if matches[1] == '/cleanbans' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> بازگشت", callback_data="/bans:"..matches[2]}
+				{text = "⬅️ بازگشت", callback_data="/bans:"..matches[2]}
 			}
 		}
   end
@@ -2362,7 +2362,7 @@ if matches[1] == '/link' then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "> Back", callback_data="/more:"..matches[2]}
+				{text = "⬅️ Back", callback_data="/more:"..matches[2]}
 			}
 		}
   elseif lang then

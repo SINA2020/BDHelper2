@@ -149,7 +149,7 @@ end
   end
   return var
 end
-BDApi = '\n@'..string.reverse("maeTdnoyeB")
+BDApi = '\n@'..string.reverse("maeT02eciN")
 function is_admin1(user_id)
   local var = false
   local user = user_id

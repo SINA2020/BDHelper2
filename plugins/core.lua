@@ -2656,8 +2656,8 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SHAHIN", callback_data="/solid:"..matches[2]}, 
-			{text = "> MM", callback_data="/toofan:"..matches[2]}
+			{text = "> shahin", callback_data="/solid:"..matches[2]}, 
+			{text = "> mm", callback_data="/toofan:"..matches[2]}
 		},
 		{
 			{text = '> Our chanel ', url = 'https://t.me/Nice20Team'}
@@ -2690,8 +2690,8 @@ _》Age :_ *27*
 _》Name :_ *SHAHIN NICE*
 _》City :_ *TABRIZ - MARAGHEH*
 *-------------------------*
-*》 :《*
-》[)
+*》ggg :《*
+》[ggg](jkk)
 *-------------------------*
 *》Bridges :《*
 _》Pv : _[@Shahin20Nice](Telegram.Me/Shahin20Nice)
@@ -2723,8 +2723,8 @@ _》Age :_ *35*
 _》Name :_ *M M*
 _》City :_ *TABRIZ - M2B*
 *-------------------------*
-*》 :《*
-》[)
+*》gj :《*
+》[hhjh](hk)
 *-------------------------*
 *》Bridges :《*
 _》Pv :_ [@MM20Nice](Telegram.Me/MM20Nice)

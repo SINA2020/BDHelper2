@@ -49,7 +49,7 @@ local lang = redis:get(hash)
 			{text = '🌟 More ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '🎖 About Us ', callback_data = '/Nice20Team:'..GP_id}
+			{text = '🎖 About Us ', callback_data = '/beyond:'..GP_id}
 		},
 		{
 			{text= '⬅️ Back' ,callback_data = '/lang:'..GP_id}
@@ -67,7 +67,7 @@ local lang = redis:get(hash)
 			{text = '🌟 قابلیت های بیشتر ', callback_data = '/more:'..GP_id}
 		},
 		{
-			{text = '🎖 درباره ما ', callback_data = '/Nice20Team:'..GP_id}
+			{text = '🎖 درباره ما ', callback_data = '/beyond:'..GP_id}
 		},
 		{
 			{text= '⬅️ بازگشت' ,callback_data = '/lang:'..GP_id}
@@ -2650,14 +2650,14 @@ local keyboard = {}
 end
 end
          -- ####################### About Us ####################### --
-if matches[1] == '/Nice20Team' then
+if matches[1] == '/beyond' then
 	local text = _config.info_text
     if not lang then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> SHAHIN", callback_data="/SHAHIN:"..matches[2]}, 
-			{text = "> MM", callback_data="/MM:"..matches[2]}
+			{text = "> SHAHIN", callback_data="/solid:"..matches[2]}, 
+			{text = "> MM", callback_data="/toofan:"..matches[2]}
 		},
 		{
 			{text = '> Our chanel ', url = 'https://t.me/Nice20Team'}
@@ -2684,7 +2684,7 @@ if matches[1] == '/Nice20Team' then
     edit_inline(msg.message_id, text, keyboard)
 end
 
-if matches[1] == '/SHAHIN' then
+if matches[1] == '/solid' then
 local text = [[*》SHAHIN Information《*
 _》Age :_ *27*
 _》Name :_ *SHAHIN NICE*
@@ -2704,20 +2704,20 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ Back", callback_data="/Nice20Team:"..matches[2]}
+				{text = "⬅️ Back", callback_data="/beyond:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ بازگشت", callback_data="/Nice20Team:"..matches[2]}
+				{text = "⬅️ بازگشت", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
     edit_inline(msg.message_id, text, keyboard)
 end
-if matches[1] == '/MM' then
+if matches[1] == '/toofan' then
 local text = [[*》MM Information《*
 _》Age :_ *35*
 _》Name :_ *M M*
@@ -2738,14 +2738,14 @@ _》PvResan :_ [@MM20Nice](Telegram.Me/MM20Nice)
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ Back", callback_data="/Nice20Team:"..matches[2]}
+				{text = "⬅️ Back", callback_data="/beyond:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ بازگشت", callback_data="/Nice20Team:"..matches[2]}
+				{text = "⬅️ بازگشت", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end

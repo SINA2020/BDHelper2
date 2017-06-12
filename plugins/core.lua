@@ -2656,28 +2656,28 @@ if matches[1] == '/beyond' then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> shahin", callback_data="/solid:"..matches[2]}, 
-			{text = "> mm", callback_data="/toofan:"..matches[2]}
+			{text = "> SoLiD", callback_data="/solid:"..matches[2]}, 
+			{text = "> ToOfan", callback_data="/toofan:"..matches[2]}
 		},
 		{
-			{text = '> Our chanel ', url = 'https://t.me/Nice20Team'}
+			{text = '> Our GitHub ', url = 'https://www.github.com/BeyondTeam'}
 		},
 		{
-			{text= '⬅️ Back' ,callback_data = '/option:'..matches[2]}
+			{text= '> Back' ,callback_data = '/option:'..matches[2]}
 		}				
 	}
    elseif lang then
 	keyboard = {} 
 	keyboard.inline_keyboard = {
 		{
-			{text = "> شاهین", callback_data="/solid:"..matches[2]}, 
-			{text = "> ام ام", callback_data="/toofan:"..matches[2]}
+			{text = "> سعید", callback_data="/solid:"..matches[2]}, 
+			{text = "> طوفان", callback_data="/toofan:"..matches[2]}
 		},
 		{
-			{text = '> کانال تیم', url = 'https://t.me/Nice20Team'}
+			{text = '> گیت هاب تیم ', url = 'https://www.github.com/BeyondTeam'}
 		},
 		{
-			{text= '⬅️ بازگشت' ,callback_data = '/option:'..matches[2]}
+			{text= '> بازگشت' ,callback_data = '/option:'..matches[2]}
 		}				
 	}
    end
@@ -2685,17 +2685,17 @@ if matches[1] == '/beyond' then
 end
 
 if matches[1] == '/solid' then
-local text = [[*》SHAHIN Information《*
-_》Age :_ *27*
-_》Name :_ *SHAHIN NICE*
-_》City :_ *TABRIZ - MARAGHEH*
+local text = [[*》SoLiD Information《*
+_》Age :_ *26*
+_》Name :_ *Saeid Rostami*
+_》City :_ *Shahriar - Tehran*
 *-------------------------*
-*》ggg :《*
-》[ggg](jkk)
+*》GitHub :《*
+》[SoLiD021](Github.Com/SoLiD021)
 *-------------------------*
 *》Bridges :《*
-_》Pv : _[@Shahin20Nice](Telegram.Me/Shahin20Nice)
-_》PvResan : _[@Shahin20Nice](Telegram.Me/Shahin20Nice)
+_》Pv : _[@SoLiD](Telegram.Me/SoLiD)
+_》PvResan : _[@SoLiD Pv](Telegram.Me/SoLiD021Pv_Bot)
 *-------------------------*
 *》Expertise :《*
 _》_*Lua*, *Cli* `and` *Api* _Bots_
@@ -2704,48 +2704,47 @@ _》_*Lua*, *Cli* `and` *Api* _Bots_
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ Back", callback_data="/beyond:"..matches[2]}
+				{text = "> Back", callback_data="/beyond:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
     edit_inline(msg.message_id, text, keyboard)
 end
 if matches[1] == '/toofan' then
-local text = [[*》MM Information《*
+local text = [[*》ToOfan Information《*
 _》Age :_ *35*
-_》Name :_ *M M*
-_》City :_ *TABRIZ - M2B*
+_》Name :_ *Ali AzizAbadi*
+_》City :_ *Bam - Kerman*
 *-------------------------*
-*》gj :《*
-》[hhjh](hk)
+*》GitHub :《*
+》[To0fan](GitHub.Com/To0fan)
 *-------------------------*
 *》Bridges :《*
-_》Pv :_ [@MM20Nice](Telegram.Me/MM20Nice)
-_》PvResan :_ [@MM20Nice](Telegram.Me/MM20Nice)
+_》Pv :_ [@ToOfan](Telegram.Me/ToOfan)
+_》PvResan :_ [@ToOfanRobot](Telegram.Me/ToOfanRobot)
 *-------------------------*
 *》Expertise :《*
 *》C#, Lua, VB.Net, JAVA*
-
 *-------------------------*]]
   if not lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ Back", callback_data="/beyond:"..matches[2]}
+				{text = "> Back", callback_data="/beyond:"..matches[2]}
 			}
 		}
   elseif lang then
 		keyboard = {} 
 		keyboard.inline_keyboard = {
 			{
-				{text = "⬅️ بازگشت", callback_data="/beyond:"..matches[2]}
+				{text = "> بازگشت", callback_data="/beyond:"..matches[2]}
 			}
 		}
   end
